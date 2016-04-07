@@ -1,0 +1,26 @@
+
+public class PersonDriver {
+       public static void main(String[] args) {
+             Person person1 = new Person();
+             NewPerson person2 = new NewPerson();
+            
+             if (person1.getName() == person2.getName() && person1.getAge() == person2.getAge()) {
+               System.out.println("You are the same person");
+             }
+             else if (person1.getName() == person2.getName()) { 
+             System.out.println("You have the same name");
+            }
+             else if (person1.getAge() == person2.getAge()) {
+             System.out.println("You have the same age");
+            }
+             else if (person1.getAge() > person2.getAge()) {
+             System.out.println(person1 + " is older than " + person2);
+            }
+            else if (person1.getAge() < person2.getAge()) {
+            System.out.println(person1 + " is younger than " + person2);
+            }
+            else {
+            System.out.println("You don't have the same name nor same age");
+            }
+} 
+}
